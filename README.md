@@ -3,7 +3,7 @@ Sensor emulator
 
 ## Overview
 
-This ROS package provides an action server to publish sensor_msgs::PointCloud2 from .ply files.
+This ROS package provides a simple action server to publish sensor_msgs::PointCloud2 from .ply files.
 
 ## Installation
 
