@@ -29,7 +29,7 @@ public:
 
     if (!nh_.getParam(name + "/frame_id", _frame_id))
     {
-      _frame_id = "camera_frame";
+      nh_.param<std::string>(name+"/frame_id", _frame_id, "camera_frame");
     };
     nh_.getParam(name + "/folder_name", _folder_name);
 
