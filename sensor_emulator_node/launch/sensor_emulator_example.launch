@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- sensor pointcloud -->
+    <arg name="ambient_pointcloud_topic" default="/camera/depth_registered/pointcloud" />
+    <arg name="frame_id" default= "camera_optical_frame" />
+
+    <include file="$(find sensor_emulator)/launch/sensor_emulator.launch">
+        <arg name="ambient_pointcloud_topic" value="$(arg ambient_pointcloud_topic)"/>
+	<arg name="frame_id" value="$(arg frame_id)"/>
+    </include>
+
+</launch>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+
+    <name>sensor_emulator_msgs</name>
+    <version>1.0.0</version>
+    <description>ROS package with actions for sensor emulator</description>
+    <author email="joanamrsdias@gmail.com">Joana Silva Dias</author>
+    <maintainer email="joanamrsdias@gmail.com">Joana Silva Dias</maintainer>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>actionlib_msgs</depend>
+    <depend>std_msgs</depend>
+
+    <depend>message_generation</depend>
+    <depend>message_runtime</depend>
+
+</package>

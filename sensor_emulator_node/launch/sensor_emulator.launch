@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- sensor pointcloud -->
+    <arg name="folder_name" default= "$(find sensor_emulator)/models/" />
+    <arg name="ambient_pointcloud_topic" />
+    <arg name="frame_id" />
+
+
+    <node pkg="sensor_emulator" type="sensor_emulator_node" name="sensor_emulator" output="screen">
+        <param name="ambient_pointcloud_topic" value="$(arg ambient_pointcloud_topic)"/>
+        <param name="folder_name" value="$(arg folder_name)"/>
+        <param name="frame_id" value="$(arg frame_id)"/>
+    </node>
+
+    <node name="rviz_sensor_emulator" pkg="rviz" type="rviz" args="-d $(find sensor_emulator)/rviz/sensor_emulator.rviz" respawn="false" clear_params="true" output="screen" />
+
+</launch>
