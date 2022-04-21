@@ -15,7 +15,7 @@ This ROS package provides an action server to publish sensor_msgs::PointCloud2 f
 
 1. **Launch node**
 
-You need to define the topic in which the pointcloud will be published (`ambient_pointcloud_topic`) and the frame_id of the emulated sensor (`frame_id`).
+You need to define the topic in which the pointcloud will be published (`ambient_pointcloud_topic`), the frame_id of the emulated sensor (`frame_id`) and the folder where the .ply file is (`folder_name`).
 
   - Option 1:
 
@@ -26,7 +26,7 @@ roslaunch sensor_emulator sensor_emulator.launch ambient_pointcloud_topic:=/poin
   - Option 2:
 See _sensor_emulator_example.launch_ and change it accordingly. 
 
-Note that the default folder is the _/models_ folder, but it can be changed as well.
+Note that the default folder (`folder_name`) is the _/models_ folder, but it can be changed as well.
 
 2. **Publish action goal**
 
