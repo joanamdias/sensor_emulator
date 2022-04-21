@@ -1,4 +1,4 @@
-Simple ROS action server to publish sensor_msgs::PointCloud2 from .ply file 
+Sensor emulator
 ==================
 
 ## Overview
