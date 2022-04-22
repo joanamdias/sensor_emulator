@@ -24,7 +24,7 @@ roslaunch sensor_emulator sensor_emulator.launch ambient_pointcloud_topic:=/poin
 ```
 
   - Option 2:
-See `/sensor_emulator_node/sensor_emulator_example.launch` example file and change it accordingly. 
+See `/sensor_emulator_node/launch/sensor_emulator_example.launch` example file and change it accordingly. 
 
 Note that the default folder (`folder_name`) is the `/sensor_emulator_node/models` folder, but it can be changed as well.
 
